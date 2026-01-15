@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: white;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(36,36,36,0.5),#000),url(image/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-fullview.jpg);
+    padding: 2% 8%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+ .logo{
+    width: 160px;
+    height: auto;
+    cursor: pointer;
+}
+.logo img{
+    width: 100%;
+}
+nav button{
+    border: 0;
+    outline: none;
+    background: rgb(206, 12, 12);
+    color: wheat;
+    padding: 10px 18px;
+    font-size: 15px;
+    border-radius: 4px;
+    margin-left: 7px;
+    cursor: pointer;
+    font-weight: 600;
+}
+nav .lang-btn{
+    background: transparent;
+    border: 1px solid  #fff;
+}
+nav .lang-btn i{
+    margin-left: 6px;
+}
+.header-text{
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.header-text h1{
+    font-size: 60px;
+    font-weight: 800px;
+    text-align: center;
+    margin-top: 18%;
+}
+.header-text h4{
+    font-size: 20px;
+    font-weight: 100px;
+    text-align: center;
+    margin-top: 1%;
+}
+.header-text p{
+    font-size: 15px;
+    font-weight:50px;
+    text-align: center;
+    margin-top: 2%;
+}
+.email input{
+    background: rgba(20,20,20,0.8);
+    padding: 20px 80px;
+    font-size: 15px;
+    margin-top: 20px;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 4px;
+    color: white;
+}
+.header-text .email{
+    display: flex;
+    gap: 6px;
+    border: 0;
+    outline: 0;
+    align-items: center;
+    margin: auto;
+}
+.email button{
+    font-size: 25px;
+    font-weight: 200px;
+    padding: 15px 30px;
+    background-color: red;
+    border: 0;
+    outline: none;
+    margin-left: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    margin-top: 2%;
+}
+hr{
+    background-color: rgb(117, 115, 115);
+    width: 100%;
+    height: 7px;
+    border: 0;
+    outline: 0;
+}
+.container{
+    width: 100%;
+    padding: 50px 0px;
+}
+.body-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 525px;
+    }
+.text-col{
+    width: 50%;
+}
+.text-col h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.text-col p{
+    font-size: 20px;
+}
+.img-col{
+    position: relative;
+}
+.img-col img{
+    width: 500px;
+    position: relative;
+}
+.img-col video{
+    position: absolute;
+    width: 366px;
+    top: 78px;
+    right: 70px;
+}
+/*-- FAQ css-- */
+.faq{
+    width: 100%;
+}
+.faq .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column ;
+}
+.faq .row button{
+    padding: 20px 52px;
+    width: 70%;
+    font-size: 22px;
+    font-weight: 555;
+    background:gray;
+    color: white;
+    border: 0;
+    outline: none;
+    margin-bottom: 8px;
+}
+.faq h1{
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+.faq .row button:hover{
+    background: rgb(189, 186, 186);
+}
+.faq .row button::after{
+    content: '+';
+    float: right;
+    font-size: 30px;
+}
+.faq-footer .header-text{
+    margin-top: 38px;
+    margin-bottom: 38px;
+}
+.footer{
+    width: 100%;
+    padding: 50px;
+}
+.footer .row{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 52px;
+    padding: 20px;
+}
+.footer .row .col a{
+    display: block;
+    color: gray;
+    margin-bottom: 18px;
+    font-size: 15px;
+    font-weight: 555;
+    text-decoration: underline;
+}
+.footer h2{
+    font-size: 20px;
+    color: gray;
+}
+.error {
+    font-size: 25px;
+    color: red;
+    font-weight: 600;
+}
+@media only screen and (max-width:680px){
+    header{
+        width: 100%;
+        height: auto;
+    }
+    nav .logo{
+        width: 100px;
+    }
+    nav button{
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+    .header-text .email{
+        flex-direction: column;
+    }
+    .header-text h1{
+        font-size: 35px;
+    }
+    .header-text h4{
+        font-size: 16px;
+    }
+    .email button{
+        font-size: 16px;
+    }
+    .body-section{
+    flex-direction: column;
+    }
+    .second, .fourth{
+        flex-direction: column-reverse;
+    }
+    .body-section{
+        flex-direction: column;
+        height: auto;
+        padding: 40px 0;
+        text-align: center;
+    }
+    .faq h1{
+        font-size: 32px;
+    }
+    .faq .row button{
+    width: 80%;
+    font-size: 20px;
+    padding: 16px 52px;
+}
+.faq-footer{
+    width: 80%;
+    margin: auto;
+}
+.footer .row{
+    grid-template-columns: repeat(2, 1fr);
+}
+.img-col{
+    position: relative;
+    left: 40px;
+  
+}
+.img-col img{
+    width: 350px;
+    position: relative;
+}
+.img-col video{
+    position: absolute;
+    width: 255px;
+    left: 46px;
+    top: 55px;
+}
+.text-col h2{
+     font-size: 30px;
+     font-weight: 600;
+}
+.text-col p{
+    font-size: 16px;
+}
+.header-text{
+    justify-content: center;
+}
+}
